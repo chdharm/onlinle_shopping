@@ -1,0 +1,17 @@
+defaults: &default
+  adapter: postgresql
+  encoding: utf8
+
+test:
+  <<: *default
+  host: localhost
+  database: sprubyshop_test
+  username: sprubyshop
+  password: nimbu
+
+development:
+  <<: *default
+  host: localhost
+  database: sprubyshop_development
+  username: sprubyshop
+  password: nimbu
